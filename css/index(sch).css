@@ -1,0 +1,122 @@
+/* общий тег */
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background: #151c39e8;
+    box-sizing: border-box;
+}
+.logo-title{
+    padding-left: 5px;
+}
+.menu-item{
+    list-style: none;
+}
+.menu-link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* banner */
+
+.banner-title, .banner-discription {
+    text-align: center;
+    color: #151c39e8;
+}
+.banner-title {
+    font-size: 48px;
+}
+
+.banner-section {
+    padding: 100px 0px;
+    background-color: #9e90ff;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.banner-discription {
+    padding-bottom: 12px;
+}
+
+
+/* cards */
+
+.cards-section {
+    padding: 50px 0px;
+}
+
+/* в этом сайте нет карт-дискрипшена */
+
+.cards-title, .cards-discription {
+     color: #151c39;
+     text-align: center;
+}
+.card {
+    padding: 25px ;
+    margin-top: 25px;
+    width: auto;
+    /* УДАЛЕНО ШИРИНА ВИДТХ */
+    background: white;
+    box-shadow: 0px 2px 7px 0px #9e90ff;
+    text-align: center;
+    
+}
+.card-button {
+    text-align: center;
+    background-color: #151c39;
+    /* e8 для прозрачности */
+    padding: 10px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-title, .card-text {
+    margin-bottom: 10px;
+}
+.card-link{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+/* update */
+.cards{
+    display: inline-block;
+    width: 25%;
+    margin: 0px 45px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: rgba(192, 191, 191, 0.925) ;
+    padding: 40px 0px;
+}
+.copyright {
+    padding-bottom: 0px ;
+    padding-top: 50px;
+    align-items: center;
+}
+
