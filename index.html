@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт о цветах</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <body link="000000">
+        <body vlink="#b9567a">
+        <body alink="E38DA5">
+    <!-- Шапка -->
+    <header>
+        <h1>Flower's World</h1>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Блоки с текстом -->
+        <section id="about">
+            <h2>Добро пожаловать в мир цветов!</h2>
+            <p>Цветы — это не просто элемент декора или традиционный подарок. Это живое воплощение красоты, эмоций и природного совершенства. Они способны преобразить любое пространство, поднять настроение и выразить самые искренние чувства.</p>
+            <span class="more-info-trigger" onclick="toggleMoreInfo()">Узнать больше</span>
+            <div id="more-info" class="hidden">
+                <p>Будь то праздничное торжество, романтическое свидание или просто желание украсить свой дом — цветы станут идеальным решением. Они добавят вашей жизни больше ярких красок, создадут особую атмосферу и подчеркнут вашу индивидуальность.</p>
+            </div>
+        </section>
+
+        <!-- <section>
+            <h2>Почему цветы так важны?</h2>
+            <p>Цветы не только красивы, но и имеют огромное значение для биоразнообразия.</p>
+            <span class="more-info-trigger" onclick="toggleMoreInfo2()">Узнать больше</span>
+            <div id="more-info2" class="hidden">
+                <p>Без цветов многие растения не смогли бы размножаться, а насекомые теряли бы источник пищи.</p>
+            </div>
+        </section> -->
+
+        <!-- Таблица с цветами -->
+        <section>
+            <h2>Мои любимые цветы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Фото</th>
+                        <th>Цвет</th>
+                        <th>Родная страна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="namename" href="rose.html">Роза</a></td>
+                        <td><img src="image/rose.jpg" alt="Роза" width="130"></td>
+                        <td>Красный</td>
+                        <td>Персия</td>
+                    </tr>
+                    <tr>
+                        <td><a class="namename" href="tulip.html">Тюльпан</a></td>
+                        <td><img src="image/tulip.jpg" alt="Тюльпан" width="130"></td>
+                        <td>Жёлтый</td>
+                        <td>Иран</td>
+                    </tr>
+                    <tr>
+                        <td><a class="namename" href="lily.html">Лилия</a></td>
+                        <td><img src="image/lily.jpg" alt="Лилия" width="130"></td>
+                        <td>Белый</td>
+                        <td>Китай</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Форма отзыва -->
+        <section>
+            <h2>Оставить отзыв</h2>
+            <form action="mailto:liseum1234.com" method="post">
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025, Галич. Автор: Белова Полина</p>
+        <p>Источники информации:</p>
+        <ul>
+            <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+            <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+        </ul>
+    </footer>
+
+    <!-- Скрипт для скрытых блоков -->
+    <script>
+        function toggleMoreInfo() {
+            const info = document.getElementById('more-info');
+            info.classList.toggle('hidden');
+        }
+
+        function toggleMoreInfo2() {
+            const info = document.getElementById('more-info2');
+            info.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
