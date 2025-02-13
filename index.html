@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="site-title">Green Way</h1>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="blocks">
+            <h2>Блоки</h2>
+            <div class="block">Блок 1</div>
+            <!-- <div class="block">Блок 2</div> -->
+            <!-- <div class="block">Блок 3</div> -->
+        </section>
+
+        <section id="table">
+            <h2>Таблица</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Раздел</th>
+                        <th>Баннер</th>
+                        <th>Доступность</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="beauty.html">Красота</a></td>
+                        <td><img src="img/красота.jpg" alt="Красота" width="130"></td>
+                        <td>Есть</td>
+                    </tr>
+                    <tr>
+                        <td><a href="health.html">Здоровье</a></td>
+                        <td><img src="img/здоровье.jpg" alt="Здоровье" width="130"></td>
+                        <td>Нет</td>
+                    </tr>
+                    <tr>
+                        <td><a href="house.html">Дом</a></td>
+                        <td><img src="img/дом.jpg" alt="Дом" width="130"></td>
+                        <td>Нет</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-block">
+            <div class="content">
+                <p>Основной текст блока.</p>
+                <span class="show-more" onclick="toggleMoreInfo(this)">Узнать больше</span>
+            </div>
+            <div class="hidden-info hidden">
+                <p>Дополнительная информация</p>
+                <p>описание</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мой сайт</p>
+    </footer>
+
+    <script>
+        // Функция для показа/скрытия дополнительной информации
+        function toggleMoreInfo(button) {
+            const hiddenInfo = button.closest('.info-block').querySelector('.hidden-info');
+            hiddenInfo.classList.toggle('visible'); // Переключаем видимость
+        }
+    </script>
+
+</body>
+</html>
