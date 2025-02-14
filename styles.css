@@ -72,6 +72,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    text-align: center;
+    
 }
 
 table th, table td {
@@ -110,7 +112,6 @@ table th {
     margin-top: 10px;
     padding: 10px;
     background-color: #eefaea;
-    border-left: 4px solid #4CAF50;
     display: none; /* Скрываем информацию по умолчанию */
 }
 
@@ -181,4 +182,34 @@ footer {
 /* Изменение цвета ссылок при наведении */
 #table td a:hover {
     color: #45a049; /* Цвет ссылок при наведении */
+}
+
+/* Стили для секции "О нас" */
+#about-section {
+    text-align: center; /* Центрируем содержимое */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Легкий фоновый цвет */
+}
+
+/* Заголовок "О нас" */
+.about-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Изображение команды */
+.about-image {
+    max-width: 600px; /* Максимальная ширина изображения */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 8px; /* Сlightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin: 20px auto; /* Отступ сверху и по центру */
+}
+
+/* Текст о команде */
+.about-text {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6; 
 }
