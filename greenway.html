@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="site-title">Green Way</h1>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Связаться с нами</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="blocks">
+            <p>Добро пожаловать в мир Green Way — место, где здоровье, красота и уют вашего дома становятся нашими приоритетами. Мы верим, что каждый может жить экологично, не теряя качества жизни. Наши продукты созданы с любовью и заботой о природе, чтобы помочь вам создать гармоничное пространство.
+            </p>
+        </div>
+
+        <section id="table">
+            <h2>Таблица</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Раздел</th>
+                        <th>Баннер</th>
+                        <th>Доступность</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="beauty.html">Красота</a></td>
+                        <td><img src="img/красота.jpg" alt="Красота" width="130"></td>
+                        <td>Есть</td>
+                    </tr>
+                    <tr>
+                        <td><a href="health.html">Здоровье</a></td>
+                        <td><img src="img/здоровье.jpg" alt="Здоровье" width="130"></td>
+                        <td>Есть</td>
+                    </tr>
+                    <tr>
+                        <td><a href="house.html">Дом</a></td>
+                        <td><img src="img/дом.jpg" alt="Дом" width="130"></td>
+                        <td>Есть</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-block">
+            <div class="content">
+                <p>
+                    В Green Way мы стремимся сделать вашу жизнь лучше через качественные продукты и услуги. Каждый товар, который вы найдёте у нас, проходит строгий контроль качества и соответствует высоким экологическим стандартам.
+                </p>
+                <span class="show-more" onclick="toggleMoreInfo(this)">Узнать больше</span>
+            </div>
+            <div class="hidden-info hidden">
+                <p>
+                    Почему выбирают нас:<br>
+                    - Натуральные ингредиенты без вредных добавок<br>
+                    - Экологическая упаковка, которая безопасна для планеты<br>
+                    - Индивидуальный подход к каждому клиенту<br>
+                    - Консультации экспертов по всем направлениям: красота, здоровье, дом
+                </p>
+                <p>
+                    Присоединяйтесь к нашему сообществу людей, которые заботятся о себе и окружающем мире. Вместе мы можем сделать планету чище и жизнь ярче!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025, Кирилл Скрябин</p>
+    </footer>
+
+    <script>
+        // Функция для показа/скрытия дополнительной информации
+        function toggleMoreInfo(button) {
+            const hiddenInfo = button.closest('.info-block').querySelector('.hidden-info');
+            hiddenInfo.classList.toggle('visible'); // Переключаем видимость
+        }
+    </script>
+
+</body>
+</html>
