@@ -1,0 +1,52 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4c0000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.photo-slider img {
+    width: 20%;
+    margin: 5px;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+}
+
+.info-table table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.info-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.history {
+    padding: 10px;
+    text-align: justify;
+}

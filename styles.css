@@ -1,0 +1,210 @@
+/* Общие стили */
+body {
+    background: url(/img/stars.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #4c0000;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Контейнер шапки */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: cen;
+    width: 100%;
+}
+
+/* Логотип */
+.logo img {
+    height: 100px;
+    margin-right: 30px;
+}
+
+/* Меню */
+/* .menu {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* gap: 15px; */
+    /* position: relative; */
+/* } */ 
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    position: relative;
+    right: 0;
+}
+/* Центральная надпись "Hogwarts" */
+.center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.menu h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.menu li {
+    font-size: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f7d117;
+}
+
+/* Герб и девиз */
+
+#herb {
+    height: 180px;
+}
+
+#herb img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.motto {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+
+/* Факультеты */
+#name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+#name a {
+    text-decoration: none;
+    color: #4c0000;
+    transition: color 0,3s ease;
+}
+
+#name a:hover {
+    color: #004c44;
+}
+
+#faculties {
+    padding-top: 60px;
+}
+#faculties h2 {
+    padding-left: 30px;
+    font-size: xx-large;
+}
+
+.faculty-block {
+    display: flex;
+    justify-content: center;
+}
+.faculty-block table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-bottom: 20px;
+    
+}
+.imaga {
+    display: flex;
+    justify-content: center;
+}
+.faculty-block td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.faculty-block img {
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #4c0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.sources {
+    padding-bottom: 15px;
+}
+.sources button {
+    padding-left: 30px;
+    background-color: #fff;
+    color: #4c0000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#sources {
+    background-color: #4c0000;
+    color: #752222;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+#sources ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#sources  ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.gryffindor a:hover {
+    color: #4c0000;
+    
+}
+
+.admission { 
+    text-align: center;
+    font-family: 'Comic';
+    font-style: italic;
+    font-size: x-large; 
+}
+
+.me {
+    padding-left: 30px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хогвартс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body text="6C9E8B">
+        <body link="000000">
+        <!-- <body vlink="737373"> -->
+        <!-- <body alink="E38DA5"> -->
+    <!-- Шапка -->
+    <header>
+        <div class="header-container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="img/herb.jpg" alt="Логотип Хогвартса">
+            </div>
+            <div class="center-title">
+                    <h1>Hogwarts</h1>
+            </div>
+            <!-- Меню -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="admission.html">Поступить</a></li>
+                    <li><a href="me.html">Разраб</a></li>
+                </ul>  
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Герб и девиз -->
+        <section id="herb">
+            <img src="img/blason.jpg" alt="Герб Хогвартса">
+            <p class="motto">«Draco dormiens nunquam titillandus»</p>
+        </section>
+
+        <!-- Факультеты -->
+        <section id="faculties">
+            <h2>Факультеты</h2>
+            
+            <!-- Гриффиндор -->
+            <div class="faculty-block" id="gryffindor">
+                <table>
+                    <tr>
+                        <td><img src="img/crest_g.png" alt="Гриффиндор"></td>
+                        <td id="name" id="g_a"><a href="gryffindor.html">Гриффиндор</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Факультет храбрых и отважных студентов.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Слизерин -->
+            <div class="faculty-block" id="slytherin">
+                <table>
+                    <tr>
+                        <td><img src="img/crest_s.jpg" alt="Слизерин"></td>
+                        <td id="name" id="s_a"><a href="slytherin.html">Слизерин</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Факультет амбициозных и расчетливых студентов.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Когтевран -->
+            <div class="faculty-block" id="ravenclaw">
+                <table>
+                    <tr>
+                        <td><img src="img/crest_k.webp" alt="Когтевран"></td>
+                        <td id="name" id="r_a"><a href="ravenclaw.html">Когтевран</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Факультет умных и мудрых студентов.</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Пуффендуй -->
+            <div class="faculty-block" id="hufflepuff">
+                <table>
+                    <tr>
+                        <td><img src="img/crest_h.webp" alt="Пуффендуй"></td>
+                        <td id="name" id="h_a"><a href="hufflepuff.html">Пуффендуй</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Факультет трудолюбивых и преданных студентов.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="sources">
+            <button onclick="toggleSources()">Источники информации</button>
+            <div id="sources" style="display: none;">
+                <ul>
+                    <li><a href="https://www.harrypotter.com/">Сайт фанатов Хогвартса</a></li>
+                    <li><a href="https://www.harrypotter.com/">Официальный сайт мира Гарри Поттера</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025, ALL RIGHTS RESERVED | Создано учеником Хогвартса</p>
+        
+    </footer>
+
+    <script>
+        function toggleSources() {
+            const sources = document.getElementById('sources');
+            if (sources.style.display === 'none') {
+                sources.style.display = 'block';
+            } else {
+                sources.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
