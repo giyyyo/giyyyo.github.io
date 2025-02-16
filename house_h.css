@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #4c0000;
+    background-color: #74640a;
     color: #fff;
     padding: 20px 30px;
     display: flex;
@@ -78,7 +78,7 @@ header {
     padding-bottom: 30px;
 }
 footer {
-    background-color: #4c0000;
+    background-color: #74640a;
     color: #fff;
     text-align: center;
     padding: 10px;
